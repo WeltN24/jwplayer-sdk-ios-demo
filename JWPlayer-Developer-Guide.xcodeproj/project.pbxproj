@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A7D08F41A5DAFD600C4E749 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7D08F31A5DAFD600C4E749 /* main.m */; };
 		6A7D08F71A5DAFD600C4E749 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7D08F61A5DAFD600C4E749 /* AppDelegate.m */; };
 		6A7D08FA1A5DAFD600C4E749 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7D08F91A5DAFD600C4E749 /* ViewController.m */; };
 		6A7D08FD1A5DAFD600C4E749 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A7D08FB1A5DAFD600C4E749 /* Main.storyboard */; };
@@ -17,12 +16,12 @@
 		8A0B54801B596AA500617BB9 /* JWPlayer-iOS-SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A0B547F1B596AA500617BB9 /* JWPlayer-iOS-SDK.framework */; };
 		8AEA39FA1AFAAE22008A8C8A /* SwiftPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEA39F71AFAAE22008A8C8A /* SwiftPlayerViewController.swift */; };
 		8AEA39FB1AFAAE22008A8C8A /* ObjCPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEA39F91AFAAE22008A8C8A /* ObjCPlayerViewController.m */; };
+		D8791EBF1D7848520093C296 /* AppDelegate_swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8791EBE1D7848520093C296 /* AppDelegate_swift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6A7D08EE1A5DAFD600C4E749 /* JWPlayer-Developer-Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JWPlayer-Developer-Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7D08F21A5DAFD600C4E749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6A7D08F31A5DAFD600C4E749 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A7D08F51A5DAFD600C4E749 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6A7D08F61A5DAFD600C4E749 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6A7D08F81A5DAFD600C4E749 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -31,11 +30,12 @@
 		6A7D08FE1A5DAFD600C4E749 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6A7D09011A5DAFD600C4E749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6A80951A1A5F028400F8B4C6 /* icon-15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-15.png"; sourceTree = "<group>"; };
-		8A0B547F1B596AA500617BB9 /* JWPlayer-iOS-SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "JWPlayer-iOS-SDK.framework"; path = "../Framework/JWPlayer-iOS-SDK.framework"; sourceTree = "<group>"; };
+		8A0B547F1B596AA500617BB9 /* JWPlayer-iOS-SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "JWPlayer-iOS-SDK.framework"; path = "../JWPlayer-iOS-SDK.framework"; sourceTree = "<group>"; };
 		8AEA39F61AFAAE22008A8C8A /* JWPlayer-Developer-Demo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JWPlayer-Developer-Demo-Bridging-Header.h"; sourceTree = "<group>"; };
 		8AEA39F71AFAAE22008A8C8A /* SwiftPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftPlayerViewController.swift; sourceTree = "<group>"; };
 		8AEA39F81AFAAE22008A8C8A /* ObjCPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCPlayerViewController.h; sourceTree = "<group>"; };
 		8AEA39F91AFAAE22008A8C8A /* ObjCPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCPlayerViewController.m; sourceTree = "<group>"; };
+		D8791EBE1D7848520093C296 /* AppDelegate_swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate_swift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +82,7 @@
 				6A7D08FE1A5DAFD600C4E749 /* Images.xcassets */,
 				6A7D09001A5DAFD600C4E749 /* LaunchScreen.xib */,
 				6A7D08F11A5DAFD600C4E749 /* Supporting Files */,
+				D8791EBE1D7848520093C296 /* AppDelegate_swift.swift */,
 			);
 			path = "JWPlayer-Developer-Demo";
 			sourceTree = "<group>";
@@ -91,7 +92,6 @@
 			children = (
 				8A0B547F1B596AA500617BB9 /* JWPlayer-iOS-SDK.framework */,
 				6A7D08F21A5DAFD600C4E749 /* Info.plist */,
-				6A7D08F31A5DAFD600C4E749 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -181,7 +181,7 @@
 				6A7D08FA1A5DAFD600C4E749 /* ViewController.m in Sources */,
 				6A7D08F71A5DAFD600C4E749 /* AppDelegate.m in Sources */,
 				8AEA39FB1AFAAE22008A8C8A /* ObjCPlayerViewController.m in Sources */,
-				6A7D08F41A5DAFD600C4E749 /* main.m in Sources */,
+				D8791EBF1D7848520093C296 /* AppDelegate_swift.swift in Sources */,
 				8AEA39FA1AFAAE22008A8C8A /* SwiftPlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

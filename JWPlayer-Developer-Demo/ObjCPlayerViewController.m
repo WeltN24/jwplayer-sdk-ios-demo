@@ -62,11 +62,11 @@
     config.title = @"JWPlayer Demo";
     config.controls = YES;  //default
     config.repeat = NO;   //default
-    config.premiumSkin = JWPremiumSkinRoundster;
+//    config.premiumSkin = JWPremiumSkinRoundster;
     
     /*
      custom css skin can be applied using:
-     config.cssSkin = @"http://p.jwpcdn.com/iOS/Skins/ethan.css";
+     config.cssSkin = @"http://p.jwpcdn.com/iOS/s/ethan.css";
      */
     
     //captions

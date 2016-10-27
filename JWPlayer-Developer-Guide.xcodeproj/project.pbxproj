@@ -138,6 +138,7 @@
 					6A7D08ED1A5DAFD600C4E749 = {
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = WX87M56X5N;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -319,6 +320,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "JWPlayer-Developer-Demo/JWPlayer-Developer-Demo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -345,6 +347,7 @@
 				PRODUCT_NAME = "JWPlayer-Developer-Guide";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "JWPlayer-Developer-Demo/JWPlayer-Developer-Demo-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};

@@ -15,27 +15,21 @@ class SwiftPlayerViewController: UITableViewController {
   @IBOutlet weak var secondVideoContainer: UIView!
   
   private var firstplayer:JWPlayerController!
-  private var secondPLayer: JWPlayerController!
+  private var secondPlayer: JWPlayerController!
   
   
   /*
-   This setup makes sure we have some scrolling space between the two videos.
-   
    What's the issue:
-   When the second video has been initialized and we scroll back to the first and go into landscape mode by rotating, the second video is shown, not the first one
+   When you have a bad internet connection (here simulated with network link conditioner in 'Egde' mode) the initializing video blocks the UI.
+   
+   When you pause XCode at that time and check the debug navigator, you see that synchronous network calls are being made by the JW lib
    
    Steps to reproduce:
-   - start in portrait mode
+   - start app
+   - wait for UI to block
+   - pause XCode
+   - open debug navigator
    
-   - play first video for a while
-   - pause first video
-   
-   - scroll to second video
-   - play second video for a while
-   - pause second video
-   
-   - scroll back to first video
-   - rotate phone into landscape
    */
   override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
     if indexPath.section == 0 && firstplayer == nil {
@@ -47,14 +41,15 @@ class SwiftPlayerViewController: UITableViewController {
       firstplayer.forceFullScreenOnLandscape = true
       firstplayer.forceLandscapeOnFullScreen = true
       
-    } else if indexPath.section == 2 && secondPLayer == nil {
-      let secondConfig = JWConfig(contentURL: "http://thedigitaltheater.com/wp-content/uploads/2015/08/thx_eclipse_long-1080p_AC3_5.1_thedigitaltheater.mp4")
-      secondPLayer = JWPlayerController(config: secondConfig)
-      secondVideoContainer.addSubview(secondPLayer.view)
-      secondPLayer.view.frame = secondVideoContainer.bounds
-      
-      secondPLayer.forceFullScreenOnLandscape = true
-      secondPLayer.forceLandscapeOnFullScreen = true
     }
+//    else if indexPath.section == 2 && secondPlayer == nil {
+//      let secondConfig = JWConfig(contentURL: "http://thedigitaltheater.com/wp-content/uploads/2015/08/thx_eclipse_long-1080p_AC3_5.1_thedigitaltheater.mp4")
+//      secondPlayer = JWPlayerController(config: secondConfig)
+//      secondVideoContainer.addSubview(secondPlayer.view)
+//      secondPlayer.view.frame = secondVideoContainer.bounds
+//      
+//      secondPlayer.forceFullScreenOnLandscape = true
+//      secondPlayer.forceLandscapeOnFullScreen = true
+//    }
   }
 }

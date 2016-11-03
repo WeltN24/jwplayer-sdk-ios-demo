@@ -8,15 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum {
+    JWFairPlay = 0
+}JWEncryption;
+
 /*!
  @protocol JWDrmDataSource
  @discussion The JWDrmDataSource protocol defines methods that get called when assistance is required to reproduce DRM encrypted content.
  */
 @protocol JWDrmDataSource <NSObject>
-
-typedef enum {
-    JWFairPlay = 0
-} JWEncryption;
 
 @required
 
